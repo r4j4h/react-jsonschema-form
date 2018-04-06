@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 function RadioWidget(props) {
   const {
+    id,
     options,
     value,
     required,
@@ -24,6 +25,7 @@ function RadioWidget(props) {
         const radio = (
           <span>
             <input
+              id={id}
               type="radio"
               checked={checked}
               name={name}
